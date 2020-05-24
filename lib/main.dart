@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MaterialApp(
+      home: BallPage(),
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
+class BallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue[700],
+        title: Text("Ask me Anything"),
+      ),
+      backgroundColor: Colors.blue[300],
+      body: Container(),
+    );
   }
 }
